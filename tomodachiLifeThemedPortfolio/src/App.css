@@ -1,21 +1,35 @@
 #desktopLoading {
-    width:100vw; 
+    background: #ffc002;  
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
-    transition: opacity 0.5s ease, display 0.5s ease;
-    transition-behavior: allow-discrete; 
+    transition: opacity 0.5s ease;
+    position: fixed;   
+    top: 0;
+    left: 0;
+    z-index: 1;   
 }
 
 #desktopLoading.hidden {
     opacity: 0;
-    display: none;
+    pointer-events: none; 
 }
 
 #desktopLogo {
     width: 75%;
     height: 75%;
     object-fit: contain;
+}
+
+
+.three-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
 }
