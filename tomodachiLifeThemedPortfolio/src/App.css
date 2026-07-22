@@ -1,0 +1,21 @@
+#desktopLoading {
+    width:100vw; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease, display 0.5s ease;
+    transition-behavior: allow-discrete; 
+}
+
+#desktopLoading.hidden {
+    opacity: 0;
+    display: none;
+}
+
+#desktopLogo {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
